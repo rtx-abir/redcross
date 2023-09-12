@@ -20,6 +20,6 @@ def upload_file():
 
     if file:
         filename = secure_filename(file.filename)
-        file.save(os.path.join('C:/Users/abird/Documents/github projects/redcross/backend/flaskApp', filename))
+        file.save(os.path.join('./', filename))
         return 'File uploaded successfully', 200
 
